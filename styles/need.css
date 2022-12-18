@@ -1,0 +1,195 @@
+#bisogno {
+  width: 100%;
+  height: auto;
+  padding-top: 60px;
+}
+@media screen and (max-width: 780px) {
+  #bisogno {
+    height: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  #bisogno {
+    height: auto;
+  }
+}
+#bisogno .perche {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+@media screen and (max-width: 450px) {
+  #bisogno .perche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  #bisogno .perche img {
+    width: 500px;
+  }
+}
+#bisogno .perche h3 {
+  font-family: "Signika Negative", sans-serif;
+  font-size: 50px;
+  color: #fff;
+  letter-spacing: 1px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 780px) {
+  #bisogno .perche h3 {
+    font-family: "Signika Negative", sans-serif;
+    font-size: 35px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #bisogno .perche h3 {
+    font-family: "Signika Negative", sans-serif;
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-top: 35px;
+    margin-bottom: none;
+  }
+}
+#bisogno .perche img {
+  padding-top: 30px;
+}
+#bisogno .perche .bisogno {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 70%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  border: 2px;
+  border-style: dotted;
+  border-color: rgb(170, 154, 248);
+  padding-right: 40px;
+  padding-left: 40px;
+}
+@media screen and (max-width: 1400px) {
+  #bisogno .perche .bisogno {
+    margin-top: 70px;
+    width: 90%;
+    height: auto;
+    border: 3px;
+    border-style: dotted;
+    border-color: rgb(170, 154, 248);
+  }
+}
+@media screen and (max-width: 780px) {
+  #bisogno .perche .bisogno {
+    margin-top: 70px;
+    width: 90%;
+    height: auto;
+    border: 3px;
+    border-style: dotted;
+    border-color: rgb(170, 154, 248);
+  }
+  #bisogno .perche .bisogno p {
+    font-size: 12px;
+  }
+  #bisogno .perche .bisogno img {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  #bisogno .perche .bisogno {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    border-style: dotted;
+    border-color: rgb(170, 154, 248);
+    box-shadow: 0px 6px 26px 0px rgb(255, 255, 255);
+    padding: 0;
+    margin-top: 90px;
+  }
+  #bisogno .perche .bisogno h4 {
+    font-size: 15px;
+  }
+  #bisogno .perche .bisogno p {
+    font-size: 12px;
+  }
+  #bisogno .perche .bisogno img {
+    display: none;
+  }
+}
+#bisogno .perche .bisogno #leftBisogno {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+@media screen and (max-width: 780px) {
+  #bisogno .perche .bisogno #leftBisogno {
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #bisogno .perche .bisogno #leftBisogno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+#bisogno .perche .bisogno #leftBisogno p {
+  padding-bottom: 10px;
+}
+#bisogno .perche .bisogno #leftBisogno h4 {
+  color: rgb(170, 154, 248);
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+#bisogno .perche .bisogno #rightBisogno {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+@media screen and (max-width: 780px) {
+  #bisogno .perche .bisogno #rightBisogno {
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #bisogno .perche .bisogno #rightBisogno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+#bisogno .perche .bisogno #rightBisogno h4 {
+  color: rgb(170, 154, 248);
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+#bisogno .perche .bisogno #rightBisogno p {
+  padding-bottom: 10px;
+}/*# sourceMappingURL=need.css.map */

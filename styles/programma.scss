@@ -1,0 +1,165 @@
+@import './utils.scss';
+@import './mobile';
+#mains {
+    overflow-x: hidden;
+    padding-bottom: 50px;
+    .fixed {
+        position: fixed;
+        bottom: 30px;
+        right: 50px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        a {
+            text-decoration: none;
+            color: $color_light_blue;
+        }
+        :hover {
+            color: $color_pink;
+            font-weight: 100;
+        }
+        @include tablet {
+        bottom: 20px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        }
+        @include mobile {
+        bottom: 40px;
+        right: 50px;
+        width: 20px;
+        height: 20px;
+        i:hover {
+            width: 25px;
+            height: 25px;  
+        }
+        }
+}
+}
+#programmatoreCompleto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+        h1 {
+            font-family: 'Signika Negative', sans-serif;
+            font-size: 45px;
+        }
+    }
+    
+}
+.programmatore {
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+}
+
+.leftProgrammatore {
+    @include mobile {
+        p {
+            font-family: 'Signika Negative', sans-serif;
+            font-size: 15px;
+        }
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+        
+        h1:first-child {
+            font-family: 'Signika Negative', sans-serif;
+            font-size: 60px;
+            color: #fff;
+        }
+        h1:nth-child(2) {
+           
+            font-family: 'Signika Negative', sans-serif;
+            font-size: 60px;
+            color: $color_light_blue;
+        }
+        h1:nth-child(3) {
+            
+            font-family: 'Signika Negative', sans-serif;
+            font-size: 60px;
+            color: rgb(170, 154, 248);
+        }
+    &-p { padding-top: 20px;
+        font-family: 'Signika Negative', sans-serif;
+        font-size: 20px;
+        color: rgb(254, 245, 255);
+    }
+    
+}
+.botton-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    a {
+        text-decoration: none;
+    }
+    p{  
+        font-family: 'Signika Negative', sans-serif;
+        font-size: 20px;
+    }
+    i::before{
+        padding: 4px;
+        font-size: medium;
+    }
+    .btn-three{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: rgb(235, 0, 98);
+        transition: all 0.7s ease;
+        opacity: 0.8;
+        margin-top: 40px;
+        width: 183px;
+        &:hover{
+            color: rgb(170, 154, 248);
+            transition: all 0.7s ease;
+            opacity: 0.8;
+        }
+    }
+    .btn-four{
+        display: flex;
+       flex-direction: row;
+       justify-content: center;
+        align-items: center;
+       color: $color_purple;
+        transition: all 0.7s ease;
+        opacity: 0.8;
+        margin-top: 40px;
+        width: 279px;
+        &:hover{
+            color: $color_light_blue;
+            transition: all 0.7s ease;
+            opacity: 0.8;
+        }
+    }
+}
+
+.right-programs {
+    @include tablet { 
+        display: none;
+    }
+    @include mobile {
+        display: none;
+    }
+    @include image-1 {
+        display: none;
+        }
+        
+            
+    justify-content: center;
+    align-items: center;
+    img {
+        padding-left: 200px;
+        width: 700px;
+    }
+}

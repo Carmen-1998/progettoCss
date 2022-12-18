@@ -1,0 +1,86 @@
+@import './utils.scss';
+@import './mobile';
+
+#recensioni {
+    width: 100%;
+    height: auto;
+    @include image-2 {
+        width: 100%;
+        height: auto;
+    }
+    @include tablet {
+        width: 100%;
+        height: auto;
+    }
+    .review {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            font-family: "Signika Negative", sans-serif;
+            font-size: 55px;
+            color: #fff;
+            letter-spacing: 1px;
+            @include image-2 {
+                font-size: 45px;
+            }
+            @include tablet {
+                font-size: 25px;
+            }
+        }
+        &-all{
+            width: 80%;
+            height: auto;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            @include image-2 {
+                grid-template-columns: 1fr 1fr 1fr ;
+                grid-template-rows: 1fr 1fr ;
+                padding: 10px;
+                width: 90%;
+            }
+            @include tablet {
+                grid-template-columns: 1fr 1fr ;
+                grid-template-rows: 1fr 1fr 1fr;
+                padding: 8px;
+                width: 90%;
+            }
+            &-student {
+                box-shadow: inset 15px 15px 15px 15px rgb(255 255 255 / 50%);
+                border-radius: 10%;
+                padding: 20px;
+                margin: 10px;
+                @include image-2{
+                    padding: 8px;
+                    h4 {
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+                @include tablet {
+                    padding: 10px;
+                }
+                img {
+                    margin-bottom: 10px;
+                }
+                h4{ 
+                    font-family: "Signika Negative", sans-serif;
+                    font-size: 20px;
+                    color: $color_light_blue;
+                    margin-bottom: 20px;
+                    
+                }
+                p{
+                    font-family: "Signika Negative", sans-serif;
+                    font-size: 15px;
+                    
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,69 @@
+@import './utils.scss';
+@import './mobile'; 
+#percorso  {
+    width: 100%;
+    height: auto;
+    .path {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        &-left {
+            width: 30%;
+            margin-left: 20px;
+            h3 {
+                font-size: 45px;
+                margin-bottom: 15px;
+            }
+            h4{
+                margin-bottom: 10px;
+            }
+            li {
+                margin-bottom: 8px;
+                .colorText {
+                    color: $color_pink;
+                }
+            }
+            @include tablet {
+                width: 50%;
+                
+                h3 {
+                    font-size: 45px;
+                    margin-top: 30px;
+                }
+                h4 {
+                    font-size: 25px;
+                }
+                li{
+                    font-size: 23px ;
+                }
+            }
+            @include mobile {
+                width: 70%;
+                h3 {
+                    font-size: 30px;
+                    margin-top: 30px;
+                }
+                h4 {
+                    font-size: 20px;
+                }
+                li{
+                    font-size: 18px ;
+                }
+            }
+        }
+        &-right {
+            
+            img {
+                width: 450px;
+            }
+            @include tablet {
+                display: none;
+            }
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+}

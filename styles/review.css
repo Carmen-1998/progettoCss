@@ -1,0 +1,96 @@
+#recensioni {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 1400px) {
+  #recensioni {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 780px) {
+  #recensioni {
+    width: 100%;
+    height: auto;
+  }
+}
+#recensioni .review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#recensioni .review h3 {
+  font-family: "Signika Negative", sans-serif;
+  font-size: 55px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 1400px) {
+  #recensioni .review h3 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 780px) {
+  #recensioni .review h3 {
+    font-size: 25px;
+  }
+}
+#recensioni .review-all {
+  width: 80%;
+  height: auto;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+@media screen and (max-width: 1400px) {
+  #recensioni .review-all {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 780px) {
+  #recensioni .review-all {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 8px;
+    width: 90%;
+  }
+}
+#recensioni .review-all-student {
+  box-shadow: inset 15px 15px 15px 15px rgba(255, 255, 255, 0.5);
+  border-radius: 10%;
+  padding: 20px;
+  margin: 10px;
+}
+@media screen and (max-width: 1400px) {
+  #recensioni .review-all-student {
+    padding: 8px;
+  }
+  #recensioni .review-all-student h4 {
+    font-size: 18px;
+  }
+  #recensioni .review-all-student p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 780px) {
+  #recensioni .review-all-student {
+    padding: 10px;
+  }
+}
+#recensioni .review-all-student img {
+  margin-bottom: 10px;
+}
+#recensioni .review-all-student h4 {
+  font-family: "Signika Negative", sans-serif;
+  font-size: 20px;
+  color: rgb(186, 251, 246);
+  margin-bottom: 20px;
+}
+#recensioni .review-all-student p {
+  font-family: "Signika Negative", sans-serif;
+  font-size: 15px;
+}/*# sourceMappingURL=review.css.map */

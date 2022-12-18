@@ -1,0 +1,179 @@
+@import './utils.scss';
+@import './mobile';
+
+#bisogno{
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    @include tablet {
+        height: auto;
+    }
+    @include mobile {
+        height: auto;
+    }
+    .perche{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            img {
+                width: 500px;
+            }
+        }
+        h3 {
+            font-family: "Signika Negative", sans-serif;
+            font-size: 50px;
+            color: #fff;
+            letter-spacing: 1px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            @include tablet {
+                font-family: "Signika Negative", sans-serif;
+                font-size: 35px;
+                color: #fff;
+                letter-spacing: 1px;
+                padding-top: 30px;
+                
+            }
+            @include mobile {
+                font-family: "Signika Negative", sans-serif;
+                font-size: 25px;
+                color: #fff;
+                letter-spacing: 1px;
+                padding-top: 35px;
+                margin-bottom: none;
+            }
+        }
+        img {
+            padding-top: 30px;
+        }
+        .bisogno {
+            position: absolute;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 70%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba($color:rgb(0, 0, 0), $alpha: 0.5);
+            border-radius: 30px;
+            border: 2px;
+            border-style:dotted;
+            border-color: rgb(170, 154, 248);
+            padding-right: 40px;
+            padding-left: 40px;
+            @include image-2 {
+                margin-top: 70px;
+                width: 90%;
+                height: auto;
+                border: 3px;
+                border-style:dotted;
+                border-color: rgb(170, 154, 248);
+            }   
+            @include tablet {
+                margin-top: 70px;
+                width: 90%;
+                height: auto;
+                border: 3px;
+                border-style:dotted;
+                border-color: rgb(170, 154, 248);
+                p {
+                    font-size: 12px;
+                }
+                img {
+                    display: none;
+                }
+            }
+            @include mobile {
+                width: 90%;
+                height:auto;
+                position: absolute;
+                display: grid;
+                background-color: rgba(0, 0, 0, 0.5);
+                align-items:center;
+                justify-content: center;
+                border-style:dotted;
+                border-color: rgb(170, 154, 248);
+                box-shadow: 0px 6px 26px 0px rgb(255 255 255);
+                padding: 0;
+                margin-top: 90px;
+                h4{
+                    font-size: 15px;
+
+                }
+                p{
+                    font-size: 12px;
+                }
+                img {
+                    display: none;
+                }
+            }
+           
+            #leftBisogno{
+                @include tablet {
+                    padding-left: 30px;
+                }
+                @include mobile {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:center;
+                    align-items:center;
+                    padding-left: 30px; 
+                    padding-right: 30px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items:center;
+                padding: 10px;
+                
+                p {
+                    padding-bottom: 10px;
+                }
+                h4{ color: rgb(170, 154, 248) ;
+                    padding-bottom: 10px;
+                    padding-top: 20px;
+                }
+            }
+            #rightBisogno {
+                @include tablet {
+                    padding-right: 30px;
+                }
+                @include mobile {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:center;
+                    align-items:center;
+                    padding-left: 30px; 
+                    padding-right: 30px;
+                    padding-top: 0; 
+                    padding-bottom: 0;
+                }
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items:center;
+                padding: 10px;
+                h4 {color: rgb(170, 154, 248);
+                    padding-bottom:10px ;
+                    padding-top: 20px;
+                }
+                p {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+    
+}
+

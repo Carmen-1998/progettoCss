@@ -1,0 +1,75 @@
+@import './utils.scss';
+@import './mobile';
+.footer {
+    @include tablet {
+        display: block;
+        height: auto;
+    }
+    @include mobile {
+        display: block;
+        height: auto;
+    }
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: $color_purple;
+    color: #000;
+    &-left {
+        justify-content: center;
+        align-items: center;
+        margin: 60px;
+        @include tablet {
+            padding-top: 15px;
+        }
+        @include mobile {
+            padding-top:15px ;
+        }
+        h4 {
+            font-size: 30px;margin-bottom: 10px;
+            @include mobile {
+                font-size: 25px;
+            }
+        }
+        img {
+            width: 7%;
+            margin: 10px 10px 10px 0px;
+        }  
+        h5 {
+            font-size: 18px;
+        }  
+        p{
+            font-size: 15px;
+        }
+        &-privacy {
+            display: flex;
+            flex-direction: row;
+            padding: 10px 0px 10px 0px;
+            p {
+                padding:0px 10px 0px 10px
+            }
+            a {
+                text-decoration: none;
+                color: $color_light_blue;
+            }
+        }
+    }
+    &-right{
+        margin: 60px;
+        h4 {
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+        @include tablet {
+            padding-bottom: 15px;
+            margin-bottom: 0;
+        }
+        @include mobile {
+            padding-bottom:15px ;
+            margin-bottom: 0;
+        }
+    
+    }
+}

@@ -1,0 +1,156 @@
+@import './utils.scss';
+@import './mobile';
+header {
+    height: 15vh;
+    min-height: 110px;
+}
+body {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    font-family: 'Signika Negative', sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+     
+}
+
+.header_inside {
+    @include tablet {
+        justify-content: space-between;
+        height: auto;
+        width: auto;
+        padding-left: 15px;
+        img {
+            width: 100px ;
+        }
+    }
+    @include mobile {
+        justify-content: space-between;
+        height: auto;
+        width: 100%;
+        img {
+            width: 100px;
+        }
+    }
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0px 20px 100px ;
+    align-items: center;
+    
+}
+.center_header {
+    @include tablet {
+        height: auto;
+        width:100%;
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: none;
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 3px;
+        p {
+            
+            font-family: 'Signika Negative', sans-serif;
+            border: 0px 0px 1px 0px;
+        }
+        i {
+            padding-left: 5px;
+        }
+    }
+    }
+    @include mobile {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-right: 0px;
+        /*padding: 0px 0px 0px 0px;*/
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 3px;
+            p {
+                
+                font-family: 'Signika Negative', sans-serif;
+                border: 0px 0px 1px 0px;
+            }
+            i {
+                padding-left: 5px;
+            }
+        }
+    }
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        p {
+            
+            font-family: 'Signika Negative', sans-serif;
+            border: 0px 0px 1px 0px;
+        }
+        i {
+            padding-left: 10px;
+        }
+    }
+}
+
+.color_text_header_two {
+    .typeButton2Header{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        box-shadow: 0 4px 10px 0 rgba(170, 154, 248);
+        border-radius: 100px;
+    }
+    :hover {
+        color: rgb(235, 0, 98);
+        opacity: 0.9;
+        transition: all 0.7s ease;
+    }
+}
+.color_text_header_one {
+    .typeButton1Header{
+        @include tablet {
+            display: none;
+        }
+        @include mobile {
+            display: none;
+        }
+        background-color: rgb(235, 0, 98);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 190px;
+        box-shadow: 0 4px 10px 0 rgba(170, 154, 248);
+        border-radius: 100px;
+    }
+    :hover {
+        color: rgba(170, 154, 248);
+        opacity: 0.9;
+        transition: all 0.7s ease;
+    }
+}
+#buttonCandidatiHeader {
+   padding:0px 20px 0px 20px;
+}

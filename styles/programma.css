@@ -1,0 +1,168 @@
+#mains {
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+#mains .fixed {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+#mains .fixed a {
+  text-decoration: none;
+  color: rgb(186, 251, 246);
+}
+#mains .fixed :hover {
+  color: rgb(252, 68, 114);
+  font-weight: 100;
+}
+@media screen and (max-width: 780px) {
+  #mains .fixed {
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #mains .fixed {
+    bottom: 40px;
+    right: 50px;
+    width: 20px;
+    height: 20px;
+  }
+  #mains .fixed i:hover {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+#programmatoreCompleto {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 450px) {
+  #programmatoreCompleto h1 {
+    font-family: "Signika Negative", sans-serif;
+    font-size: 45px;
+  }
+}
+
+.programmatore {
+  display: flex;
+  flex-direction: row;
+  padding-top: 60px;
+}
+
+.leftProgrammatore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 450px) {
+  .leftProgrammatore p {
+    font-family: "Signika Negative", sans-serif;
+    font-size: 15px;
+  }
+}
+.leftProgrammatore h1:first-child {
+  font-family: "Signika Negative", sans-serif;
+  font-size: 60px;
+  color: #fff;
+}
+.leftProgrammatore h1:nth-child(2) {
+  font-family: "Signika Negative", sans-serif;
+  font-size: 60px;
+  color: rgb(186, 251, 246);
+}
+.leftProgrammatore h1:nth-child(3) {
+  font-family: "Signika Negative", sans-serif;
+  font-size: 60px;
+  color: rgb(170, 154, 248);
+}
+.leftProgrammatore-p {
+  padding-top: 20px;
+  font-family: "Signika Negative", sans-serif;
+  font-size: 20px;
+  color: rgb(254, 245, 255);
+}
+
+.botton-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.botton-two a {
+  text-decoration: none;
+}
+.botton-two p {
+  font-family: "Signika Negative", sans-serif;
+  font-size: 20px;
+}
+.botton-two i::before {
+  padding: 4px;
+  font-size: medium;
+}
+.botton-two .btn-three {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgb(235, 0, 98);
+  transition: all 0.7s ease;
+  opacity: 0.8;
+  margin-top: 40px;
+  width: 183px;
+}
+.botton-two .btn-three:hover {
+  color: rgb(170, 154, 248);
+  transition: all 0.7s ease;
+  opacity: 0.8;
+}
+.botton-two .btn-four {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgb(98, 0, 255);
+  transition: all 0.7s ease;
+  opacity: 0.8;
+  margin-top: 40px;
+  width: 279px;
+}
+.botton-two .btn-four:hover {
+  color: rgb(186, 251, 246);
+  transition: all 0.7s ease;
+  opacity: 0.8;
+}
+
+.right-programs {
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 780px) {
+  .right-programs {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .right-programs {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .right-programs {
+    display: none;
+  }
+}
+.right-programs img {
+  padding-left: 200px;
+  width: 700px;
+}/*# sourceMappingURL=programma.css.map */
